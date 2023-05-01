@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap");
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+body .header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  position: fixed;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 45px;
+  background-color: white;
+}
+body .header .header__nav,
+body .header .header__name,
+body .header .header__search-icon {
+  display: flex;
+}
+body .header .header__nav a,
+body .header .header__name span,
+body .header .header__search-icon span {
+  cursor: pointer;
+}
+body .header .header__nav {
+  justify-content: flex-start;
+  font-size: 14px;
+  margin-left: 20%;
+}
+body .header .header__nav a {
+  margin-right: 30px;
+}
+body .header .header__nav a:hover {
+  border-bottom: 1px solid black;
+}
+body .header .header__name {
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+body .header .header__search-icon {
+  justify-content: flex-end;
+  margin-right: 25%;
+}
+body .header .header__search-icon span {
+  font-size: 25px;
+}
+body .main {
+  padding-top: 45px;
+}
+body .main .main__contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .main .main__contents .main__content-first,
+body .main .main__contents .main__content-second {
+  display: flex;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: 700;
+}
+body .main .main__contents .main__content-first p,
+body .main .main__contents .main__content-second p {
+  width: 75%;
+  text-align: center;
+}
+body .main .main__contents .main__content-first--img,
+body .main .main__contents .main__content-second--img {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+body .main .main__contents .main__content-first--img {
+  background-image: url("../../img/first_sofa.jpg");
+}
+body .main .main__contents .main__content-second--img {
+  background-image: url("../../img/second_sofa.jpg");
+}
+body .main .main__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  background-color: #efca57;
+}
+body .main .main__about span {
+  font-size: 40px;
+  font-weight: 600;
+}
+body .main .main__about p {
+  width: 57.5%;
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+}
+body .main .products {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(2, 50%);
+  width: 100%;
+  height: 100vh;
+  gap: 2px;
+  margin: 2px 0;
+}
+body .main .products .sofa__first,
+body .main .products .sofa__second,
+body .main .products .sofa__third,
+body .main .products .sofa__fourth,
+body .main .products .sofa__fifth,
+body .main .products .sofa__sixth {
+  background-position: center center;
+  background-size: cover;
+}
+body .main .products .sofa__first {
+  background-image: url("../../img/sofa_1.jpg");
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+body .main .products .sofa__second {
+  background-image: url("../../img/sofa_2.jpg");
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+body .main .products .sofa__third {
+  background-image: url("../../img/sofa_3.jpg");
+  grid-column: 4/6;
+  grid-row: 1/2;
+}
+body .main .products .sofa__fourth {
+  background-image: url("../../img/sofa_4.jpg");
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+body .main .products .sofa__fifth {
+  background-image: url("../../img/sofa_5.jpg");
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+body .main .products .sofa__sixth {
+  background-image: url("../../img/sofa_6.jpg");
+  grid-column: 4/6;
+  grid-row: 2/3;
+}
+body .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #535851;
+  font-family: "Open Sans", sans-serif;
+}
+body .footer .footer__box {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+}
+body .footer .footer__box ul {
+  font-size: 14px;
+}
+body .footer .footer__box ul .footer__menu {
+  color: #a9aca9;
+}
+body .footer .footer__box ul li {
+  color: white;
+  list-style: none;
+  margin-top: 10px;
+}
+body .footer .footer__box ul li span:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}/*# sourceMappingURL=styles.css.map */
